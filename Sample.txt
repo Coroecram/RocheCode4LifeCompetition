@@ -1,0 +1,71 @@
+public class Sample {
+
+    private int sampleId;
+    private int carriedBy;
+    private int rank;
+    private int expertise;
+    private int health;
+    private SampleCost cost;   
+
+    public Sample(int id, int carriedBy, int rank, int expertise, int health, int A, int B, int C, int D, int E) {
+        this.setSampleId(id);
+        this.setCarriedBy(carriedBy);
+        this.setRank(rank);
+        this.setExpertise(expertise);
+        this.setHealth(health);
+        this.setCost(A, B, C, D, E);
+    }
+
+    public int getHealth() {
+        return health;
+    }
+
+    public void setHealth(int health) {
+        this.health = health;
+    }
+
+    public int getExpertise() {
+        return expertise;
+    }
+
+    public void setExpertise(int expertise) {
+        this.expertise = expertise;
+    }
+
+    public int getRank() {
+        return rank;
+    }
+
+    public void setRank(int rank) {
+        this.rank = rank;
+    }
+
+    public int getCarriedBy() {
+        return carriedBy;
+    }
+
+    public void setCarriedBy(int carriedBy) {
+        this.carriedBy = carriedBy;
+    }
+
+    public int getSampleId() {
+        return sampleId;
+    }
+
+    public void setSampleId(int sampleId) {
+        this.sampleId = sampleId;
+    }
+
+    public SampleCost getcost() {
+        return cost;
+    }
+
+    private void setcost(int costA, int costB, int costC, int costD, int costE) {
+        this.cost = new SampleCost(A, B, C, D, E);
+    }
+    
+    public int totalCost() {
+        return this.getCost.totalCost();        
+    }
+
+}

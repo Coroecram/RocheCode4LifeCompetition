@@ -1,0 +1,61 @@
+public class SampleCost {
+    
+    private int costA;
+    private int costB;
+    private int costC;
+    private int costD;
+    private int costE;
+
+    public SampleCost(int A, int B, int C, int D, int E) {
+        this.setCostA(A);
+        this.setCostB(B);
+        this.setCostC(C);
+        this.setCostD(D);
+        this.setCostE(E);    
+    }
+
+    public int getCostA() {
+        return costA;
+    }
+
+    public void setCostA(int costA) {
+        this.costA = costA;
+    }
+
+    public int getCostB() {
+        return costB;
+    }
+
+    public void setCostB(int costB) {
+        this.costB = costB;
+    }
+
+    public int getCostC() {
+        return costC;
+    }
+
+    public void setCostC(int costC) {
+        this.costC = costC;
+    }
+
+    public int getCostD() {
+        return costD;
+    }
+
+    public void setCostD(int costD) {
+        this.costD = costD;
+    }
+
+    public int getCostE() {
+        return costE;
+    }
+
+    public void setCostE(int costE) {
+        this.costE = costE;
+    }
+    
+    public int totalCost() {
+        return this.getCostA() + this.getCostB() + this.getCostC() + this.getCostD() + this.getCostE();
+    }
+
+}
